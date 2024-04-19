@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ThKnop.github.io/subplayer",
   "name": "subplayer",
   "version": "3.0.0",
   "private": true,
@@ -23,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build && rm -rf docs && mv build docs"
   },
   "eslintConfig": {
